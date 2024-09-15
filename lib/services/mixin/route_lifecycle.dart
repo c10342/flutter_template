@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_template_mobile/router/index.dart';
+import 'package:flutter_template/router/index.dart';
 
 mixin RouteLifecycleMixin<T extends StatefulWidget> on State<T>, RouteAware {
   @override

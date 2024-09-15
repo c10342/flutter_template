@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_template_mobile/services/mixin/app_lifecycle.dart';
-import 'package:flutter_template_mobile/services/mixin/route_lifecycle.dart';
+import 'package:flutter_template/services/mixin/app_lifecycle.dart';
+import 'package:flutter_template/services/mixin/route_lifecycle.dart';
 
 abstract class PageState<T extends StatefulWidget> extends State<T>
     with RouteAware, RouteLifecycleMixin, AppLifecycleMixin {

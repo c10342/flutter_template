@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:module_ui/form/provider.dart';
 import 'package:module_utils/is.dart';
 
-class Input extends StatefulWidget {
+class BaseInput extends StatefulWidget {
 //  是否禁用
   bool disabled;
 
 //  最大长度
-  int maxLength;
+  int? maxLength;
 
 //  输入框的值发生变化
   Function(String value)? onChange;
@@ -21,21 +21,20 @@ class Input extends StatefulWidget {
 //  文本占位符
   String placeholder;
 
-  Input(
-      {Key? key,
+  BaseInput(
+      {super.key,
       this.disabled = false,
-      this.maxLength = -1,
+      this.maxLength,
       this.onChange,
       this.value = '',
       this.type = 'text',
-      this.placeholder = ''})
-      : super(key: key);
+      this.placeholder = ''});
 
   @override
-  State<Input> createState() => _InputState();
+  State<BaseInput> createState() => _BaseInputState();
 }
 
-class _InputState extends State<Input> {
+class _BaseInputState extends State<BaseInput> {
   late TextEditingController _controller;
 
   @override
@@ -69,8 +68,8 @@ class _InputState extends State<Input> {
     return TextField(
       controller: _controller,
       maxLength: widget.maxLength,
-      onChanged: widget.onChange,
-      enabled: widget.disabled,
+      onChanged: onChange,
+      enabled: !widget.disabled,
 //      密码输入
       obscureText: widget.type == 'password',
       decoration: InputDecoration(hintText: widget.placeholder),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_template_mobile/services/enums/common.dart';
+import 'package:flutter_template/services/enums/common.dart';
 
 class SystemStore extends ChangeNotifier {
 //  系统语言

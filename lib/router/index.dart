@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_template_mobile/pages/home/index.dart';
-import 'package:flutter_template_mobile/pages/login/index.dart';
+import 'package:flutter_template/pages/home/index.dart';
+import 'package:flutter_template/pages/login/index.dart';
 import 'package:go_router/go_router.dart';
 
 //定义页面路径路径

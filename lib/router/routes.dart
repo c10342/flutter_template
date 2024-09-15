@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_template_mobile/router/index.dart';
+import 'package:flutter_template/router/index.dart';
 import 'package:go_router/go_router.dart';
 
 class Routes {

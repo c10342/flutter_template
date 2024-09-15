@@ -1,4 +1,4 @@
-# flutter_template_mobile
+# flutter_template
 
 flutter 项目模板
 
