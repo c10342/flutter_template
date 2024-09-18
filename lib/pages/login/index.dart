@@ -6,7 +6,6 @@ import 'package:module_ui/form/form_item.dart';
 import 'package:module_ui/form/index.dart';
 import 'package:module_ui/form/rule.dart';
 import 'package:module_ui/input/index.dart';
-import 'package:module_utils/is.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
